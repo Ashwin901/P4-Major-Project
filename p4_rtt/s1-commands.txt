@@ -1,0 +1,4 @@
+table_add MyIngress.forwarding MyIngress.forward 1 => 2
+table_add MyIngress.forwarding MyIngress.forward 2 => 1
+table_add MyIngress.tcp_flag_ack_match MyIngress.NoAction 1 =>
+table_add MyEgress.tcp_flag_ack_match MyEgress.rtt 1 =>

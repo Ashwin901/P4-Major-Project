@@ -1,0 +1,24 @@
+{
+    "p4_src": "basic.p4",
+    "cli": true,
+    "pcap_dump": true,
+    "enable_log": true,
+    "topology": {
+      "assignment_strategy": "l2",
+      "default": {
+        "bw": 10
+      },
+      "links": [["h1", "s1"], ["h2", "s1"]],
+      "hosts": {
+        "h1": {
+        },
+        "h2": {
+        }
+      },
+      "switches": {
+        "s1": {
+            "cli_input": "s1-commands.txt"
+        }
+      }
+    }
+  }
